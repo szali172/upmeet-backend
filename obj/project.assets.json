@@ -428,19 +428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\szali\\.nuget\\packages\\": {}
+    "C:\\Users\\Blitz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj",
+      "projectUniqueName": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj",
       "projectName": "UpmeetBackend",
-      "projectPath": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj",
-      "packagesPath": "C:\\Users\\szali\\.nuget\\packages\\",
-      "outputPath": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\obj\\",
+      "projectPath": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj",
+      "packagesPath": "C:\\Users\\Blitz\\.nuget\\packages\\",
+      "outputPath": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\szali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Blitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -495,7 +495,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
