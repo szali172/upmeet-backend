@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UpmeetBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15331cff6235ae32f9ac774a3ce59a48f51be59b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0624457a6e6a5d1ae2986cd9cb583a263655897a")]
 [assembly: System.Reflection.AssemblyProductAttribute("UpmeetBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UpmeetBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
