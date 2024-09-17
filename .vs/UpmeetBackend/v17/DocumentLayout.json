@@ -1,10 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\",
+  "WorkspaceRootPath": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\learntocode\\groupproject\\groupproject\\upmeet-backend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\szali\\AppData\\Roaming\\Microsoft\\UserSecrets\\fa917958-71c3-4acc-b38e-e5dcb7b78746\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\csharpbootcamp\\projects\\upmeet\\upmeetbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\csharpbootcamp\\projects\\upmeet\\upmeetbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\csharpbootcamp\\projects\\upmeet\\upmeetbackend\\data\\upmeetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|solutionrelative:data\\upmeetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\csharpbootcamp\\projects\\upmeet\\upmeetbackend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|c:\\csharpbootcamp\\projects\\upmeet\\upmeetbackend\\data\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E877964D-AA3A-40DF-AC84-CE3D502B4888}|UpmeetBackend.csproj|solutionrelative:data\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +33,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T01:45:15.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventDto.cs",
+              "DocumentMoniker": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Data\\Dto\\EventDto.cs",
+              "RelativeDocumentMoniker": "Data\\Dto\\EventDto.cs",
+              "ToolTip": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Data\\Dto\\EventDto.cs",
+              "RelativeToolTip": "Data\\Dto\\EventDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T01:45:08.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpmeetDbContext.cs",
+              "DocumentMoniker": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Data\\UpmeetDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\UpmeetDbContext.cs",
+              "ToolTip": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Data\\UpmeetDbContext.cs",
+              "RelativeToolTip": "Data\\UpmeetDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T01:31:34.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T01:28:51.992Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "Models\\Event.cs",
-              "ToolTip": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\Models\\Event.cs",
-              "RelativeToolTip": "Models\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T01:06:31.272Z",
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\szali\\AppData\\Roaming\\Microsoft\\UserSecrets\\fa917958-71c3-4acc-b38e-e5dcb7b78746\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\szali\\AppData\\Roaming\\Microsoft\\UserSecrets\\fa917958-71c3-4acc-b38e-e5dcb7b78746\\secrets.json",
+              "ToolTip": "C:\\Users\\szali\\AppData\\Roaming\\Microsoft\\UserSecrets\\fa917958-71c3-4acc-b38e-e5dcb7b78746\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\szali\\AppData\\Roaming\\Microsoft\\UserSecrets\\fa917958-71c3-4acc-b38e-e5dcb7b78746\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-16T22:36:32.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-16T22:36:10.445Z",
               "EditorCaption": ""
             }
           ]

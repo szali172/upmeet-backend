@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj": {}
+    "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj": {}
   },
   "projects": {
-    "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj": {
+    "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj",
+        "projectUniqueName": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj",
         "projectName": "UpmeetBackend",
-        "projectPath": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\UpmeetBackend.csproj",
-        "packagesPath": "C:\\Users\\Blitz\\.nuget\\packages\\",
-        "outputPath": "C:\\LearnToCode\\GroupProject\\groupProject\\upmeet-backend\\obj\\",
+        "projectPath": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\UpmeetBackend.csproj",
+        "packagesPath": "C:\\Users\\szali\\.nuget\\packages\\",
+        "outputPath": "C:\\CSharpBootcamp\\Projects\\Upmeet\\UpmeetBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Blitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\szali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -69,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
