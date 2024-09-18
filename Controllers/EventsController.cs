@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using UpmeetBackend.Data;
 using UpmeetBackend.Data.Dto;
 using UpmeetBackend.Mapper;
+using UpmeetBackend.Models;
 namespace UpmeetBackend.Controllers;
 
 [Route("api/[controller]")]
@@ -17,32 +18,28 @@ public class EventsController : ControllerBase
         _upmeetDbContext = upmeetDbContext;
     }
 
+
+
     [HttpGet]
     public async Task<IActionResult> GetAllEvents()
     {
-       
-        var events = await _upmeetDbContext.Events.ToListAsync();
-
-      
-        var eventDtos = events.Select(eventEntity => eventEntity.ToEvent()).ToList();
-
-     
-        return Ok(eventDtos);
+        return Ok(await _upmeetDbContext.Events.ToListAsync());
     }
+
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetEventById(int id)
     {
-        var eventEntity = await _upmeetDbContext.Events.FindAsync(id);
+        Event? eventEntity = await _upmeetDbContext.Events.FindAsync(id);
 
         if (eventEntity == null)
         {
             return NotFound(); 
         }
 
-        var eventDto = eventEntity.ToEvent();
-        return Ok(eventDto);
+        return Ok(eventEntity);
     }
+
 
     [HttpPost]
     public async Task<IActionResult> CreateEvent([FromBody] EventDto eventDto)
@@ -52,14 +49,14 @@ public class EventsController : ControllerBase
             return BadRequest(ModelState); 
         }
 
-        var eventEntity = eventDto.ToEvent(); 
+        Event eventEntity = EventMapper.ToEvent(eventDto);
 
-        _upmeetDbContext.Events.Add(eventEntity);
+        await _upmeetDbContext.Events.AddAsync(eventEntity);
         await _upmeetDbContext.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetEventById), new { id = eventEntity.EventId }, eventEntity.ToEvent());
-      
+        return CreatedAtAction(nameof(GetEventById), new { id = eventEntity.EventId }, eventEntity);
     }
+
 
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateEvent(int id, [FromBody] EventDto eventDto)
@@ -69,22 +66,21 @@ public class EventsController : ControllerBase
             return BadRequest(ModelState); 
         }
 
-        var eventEntity = await _upmeetDbContext.Events.FindAsync(id);
+        Event? eventEntity = await _upmeetDbContext.Events.FindAsync(id);
+
         if (eventEntity == null)
         {
             return NotFound(); 
         }
 
-        
-        eventEntity.EventName = eventDto.EventName;
-        eventEntity.EventDescription = eventDto.EventDescription;
-        eventEntity.EventLocation = eventDto.EventLocation;
-        eventEntity.EventTime = eventDto.EventTime;
+        Event updatedEvent = EventMapper.UpdateEvent(eventEntity, eventDto);
 
+        _upmeetDbContext.Update(updatedEvent);
         await _upmeetDbContext.SaveChangesAsync();
 
         return NoContent();
     }
+
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteEvent(int id)
