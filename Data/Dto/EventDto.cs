@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using UpmeetBackend.Models;
 
 namespace UpmeetBackend.Data.Dto;
 
@@ -17,4 +18,9 @@ public class EventDto
     public string EventLocation { get; set; }
 
     public DateTime EventTime { get; set; }
+
+    internal Event ToEvent()
+    {
+        throw new NotImplementedException();
+    }
 }
