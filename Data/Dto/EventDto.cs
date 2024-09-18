@@ -19,8 +19,4 @@ public class EventDto
 
     public DateTime EventTime { get; set; }
 
-    internal Event ToEvent()
-    {
-        throw new NotImplementedException();
-    }
 }

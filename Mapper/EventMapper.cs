@@ -28,4 +28,16 @@ public class EventMapper
             EventTime = eventDto.EventTime
         };
     }
+
+
+    /// <summary> Update the passed Event with a given EventDto </summary>
+    public static Event UpdateEvent(Event eventEntity, EventDto eventDto)
+    {
+        eventEntity.EventName = eventDto.EventName;
+        eventEntity.EventDescription = eventDto.EventDescription;
+        eventEntity.EventLocation = eventDto.EventLocation;
+        eventEntity.EventTime = eventDto.EventTime;
+
+        return eventEntity;
+    }
 }
