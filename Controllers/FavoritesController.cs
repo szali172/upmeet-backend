@@ -21,7 +21,7 @@ public class FavoritesController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAllFavorites()
     {
-        return Ok(_upmeetDbContext.Favorites.ToListAsync());
+        return Ok(await _upmeetDbContext.Favorites.ToListAsync());
     }
 
     [HttpGet("{id}")]
