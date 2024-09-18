@@ -21,4 +21,8 @@ public class Event
 
     public DateTime EventTime { get; set; }
 
+    internal object ToEvent()
+    {
+        throw new NotImplementedException();
+    }
 }
