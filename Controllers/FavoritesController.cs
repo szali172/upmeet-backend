@@ -18,23 +18,26 @@ public class FavoritesController : ControllerBase
         _upmeetDbContext = upmeetDbContext;
     }
 
-    [HttpGet]
-    public async Task<IActionResult> GetAllFavorites()
+
+    [HttpGet("{userId}")]
+    public async Task<IActionResult> GetFavoritesByUserId(int userId)
     {
-        return Ok(await _upmeetDbContext.Favorites.ToListAsync());
-    }
+        // Grab the users favorite events
+        IQueryable<Favorite> userFavorites = _upmeetDbContext.Favorites.Where(x => x.UserId == userId);
 
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetFavoriteById(int id)
-    {
-        var favoriteEntity = await _upmeetDbContext.Favorites.FindAsync(id);
+        var result = from favorites in userFavorites
+                     join event_ in _upmeetDbContext.Events on favorites.EventId equals event_.EventId into FavoritedEvents
+                     from m in FavoritedEvents.DefaultIfEmpty()
+                     select new
+                     {
+                         EventId = favorites.EventId,
+                         EventName = m.EventName,
+                         EventDescription = m.EventDescription,
+                         EventLocation = m.EventLocation,
+                         EventTime = m.EventTime
+                     };
 
-        if (favoriteEntity == null)
-        {
-            return NotFound();
-        }
-
-        return Ok(favoriteEntity);
+        return Ok(await result.ToListAsync());
     }
 
     [HttpPost]
