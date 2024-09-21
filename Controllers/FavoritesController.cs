@@ -55,10 +55,10 @@ public class FavoritesController : ControllerBase
         return Ok(newFavorite);
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteFavorite(int id)
+    [HttpDelete("userId={userId}/eventId={eventId}")]
+    public async Task<IActionResult> DeleteFavorite(int userId, int eventId)
     {
-        var favoriteEntity = await _upmeetDbContext.Favorites.FindAsync(id);
+        var favoriteEntity = await _upmeetDbContext.Favorites.FirstOrDefaultAsync(x => x.UserId == userId && x.EventId == eventId);
 
         if (favoriteEntity == null)
         {
